@@ -1,0 +1,25 @@
+body {
+    background-image: url(Assets/background-sign-up.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-fluid {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-fluid h1 {
+    font-size: 5vh;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+#error {
+    color: red;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sign-in.css">
+    <script src="sign-in.js" defer></script>
+</head>
+<body>
+    <!-- RESPONSIVE NAVBAR -->
+    <div class="content">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">FURNICA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-current="page" href="#">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Interior</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Consultant</a>
+                  </li>
+                </ul>
+                <form class="" role="search">
+                    <button class="btn btn-outline-dark btn-lg" type="button" id="login">Login</button>
+                <button class="btn btn-outline-secondary mx-2 btn-lg" type="button" id="register">Register</button>
+                </form>
+                </div>
+            </div>
+            </div>
+          </nav>
+    </div>
+    
+    <!-- content -->
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card bg-white text-black shadow mb-5">
+              <div class="card-content p-5 text-center">
+                <div class="mb-1 mt-2 pb-5">
+                  <h2 class="fw-bold mb-2 ">Welcome Back!</h2>
+                  <p class="text-black mb-5">Sign in to your Furnica Account</p>
+                  <!-- ntar tambahin action form -->
+                  <form action="home.html" onsubmit="return validateInput()" name="login-form">
+                    <div class="email mb-3 text-start">
+                        Email
+                      <input type="email" name="email" id="form-email" class="form-control form-control-lg" placeholder="Email Address">
+                    </div>
+                    <div class="password mb-3 text-start">
+                        Password
+                      <input type="password" name="password" id="form-password" class="form-control form-control-lg" placeholder="Password">
+
+                      <div class="text-center mt-2" id="error"></div>
+                      <div class="text-center mt-3">
+                          <a href="" class="text-black-50 text-decoration-none">Forgot Password?</a>
+                      </div>
+                  </div>
+                    <button class="btn btn-outline-dark btn-lg px-5 mt-1" type="submit">Sign In</button>
+                  </div>
+                  </form>
+                <div>
+                  <p class="mb-0">Don't have an account? <a href="sign-up.html" class="text-black-50 fw-bold">Sign Up</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="footer-content text-center p-1">
+            <h2>Follow Us</h2>
+            <div class="icons d-flex">
+                <a href="https://www.facebook.com" class="nav-link mx-1" target="_blank"><img src="Assets/facebook.png" alt=""></a>
+                <a href="https://twitter.com/home" class="nav-link mx-1" target="_blank"><img src="Assets/twitter.png" alt=""></a>
+                <a href="https://www.instagram.com" class="nav-link mx-1" target="_blank"><img src="Assets/instagram.png" alt=""></a>
+                <a href="https://id.pinterest.com" class="nav-link mx-1" target="_blank"><img src="Assets/pinterest.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
