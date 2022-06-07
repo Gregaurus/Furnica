@@ -25,3 +25,11 @@ footer {
 #error {
     color: red;
 }
+
+.error {
+    border-color: red;
+}
+
+.success {
+    border-color: green;
+} 

@@ -10,7 +10,7 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="sign-in.css">
-    <script src="sign-in.js" defer></script>
+    <script src="js/sign-in.js" defer></script>
 </head>
 <body>
     <!-- RESPONSIVE NAVBAR -->
@@ -55,8 +55,8 @@
                   <!-- ntar tambahin action form -->
                   <form action="home.html" onsubmit="return validateInput()" name="login-form">
                     <div class="email mb-3 text-start">
-                        Email
-                      <input type="email" name="email" id="form-email" class="form-control form-control-lg" placeholder="Email Address">
+                        Username
+                      <input type="name" name="name" id="form-name" class="form-control form-control-lg" placeholder="Username">
                     </div>
                     <div class="password mb-3 text-start">
                         Password
@@ -67,7 +67,7 @@
                           <a href="" class="text-black-50 text-decoration-none">Forgot Password?</a>
                       </div>
                   </div>
-                    <button class="btn btn-outline-dark btn-lg px-5 mt-1" type="submit">Sign In</button>
+                    <button class="btn btn-outline-dark btn-lg px-5 mt-1" type="submit" id="signin-btn">Sign In</button>
                   </div>
                   </form>
                 <div>
@@ -79,6 +79,8 @@
           </div>
         </div>
       </div>
+
+      
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start">

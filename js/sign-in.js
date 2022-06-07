@@ -8,21 +8,21 @@ document.getElementById('login').onclick = function () {
     location.href = "sign-in.html";
 };
 
+let username = ''
+
 //form 
 function validateInput() {
     const form = document.forms["login-form"]
 
-    const emailTxt = form['email'].value
+    const nameTxt = form['name'].value
     const passwordTxt = form['password'].value
 
     let message = ''
+    console.log(nameTxt)
+    console.log(passwordTxt)
 
-    if(!emailTxt || !passwordTxt) {
+    if(!nameTxt || !passwordTxt) {
         message = 'All field must be filled!'
-    } else if(!emailTxt.endsWith('.com')) {
-        message = 'Email must ends with .com!'
-    } else if(passwordTxt.length < 8) {
-        message = 'Password must be more than 8 characters!'
     }
 
     // check email & password
@@ -30,14 +30,16 @@ function validateInput() {
         document.getElementById('error').innerHTML = message
         return false
     } else {
-        // email: jasonandolens21@gmail.com, password: jason123
-        if(emailTxt == 'jasonandolens21@gmail.com' && passwordTxt == 'jason123') {
-            return true
-        } else {
-            message = 'Email or Password incorrect!'
-            document.getElementById('error').innerHTML = message
+        // CHECK
+        let formData = JSON.parse(localStorage.getItem('dataUser')) || [];
+        let exist = formData.length &&
+        JSON.parse(localStorage.getItem('dataUser')).some(data => data.name == nameTxt && data.pass == passwordTxt);
+        console.log(exist)
+        if(!exist) {
+            alert('Incorrect Username or Password!')
             return false
+        } else {
+            return true
         }
-
     }
 }

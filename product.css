@@ -1,3 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.active{
+    text-decoration: underline;
+}
+
 body {
     background-color: #fdfdfd;
 }
@@ -7,8 +16,23 @@ body {
     border-radius: 50%;
 }
 
+#header-content-1 {
+    background-image: url(Assets/header1.png);
+}
+
+#header-content-2 {
+    background-image: url(Assets/header2.png);
+}
+
+#header-content-3 {
+    background-image: url(Assets/header3.png);
+}
+
+#header-content-4 {
+    background-image: url(Assets/header4.png);
+}
+
 .header-content {
-    background-image: url(Assets/home.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -48,6 +72,7 @@ body {
 }
 
 .membership-wrapper {
+    /* background-color: #e2e2e2; */
     background-image: url(Assets/background-sign-up.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,4 +129,58 @@ footer {
 
 .carousel-inner img {
     margin: auto;
+}
+
+.gb{
+    font-family: Gowun Batang;
+    color: #53453F;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.gbh3{
+    font-family: Gowun Batang;
+    color: #53453F;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .gbh3{
+        font-size: 18px;
+    }
+    i{
+        font-size: 20px;
+    }
+
+    .header-content {
+        min-height: 40vh;
+    }
+  }
+
+.card{
+    border-radius: 30px;
+}
+
+.col-sm-6{
+    padding: 20px;
+    margin: 0;
+}
+
+i{
+    padding: 10px;
+    font-size: 50px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #F3F2F2;
+    text-align: center;
+    padding: 10px;
+}
+
+.interior {
+    border-radius: 60px;
+    border: none;
 }
